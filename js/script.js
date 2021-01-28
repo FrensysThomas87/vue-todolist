@@ -6,7 +6,7 @@ var app = new Vue({
  data:{
    list:[],
    item: '',
-
+   imgLogo: './img/logo.png'
 },
 methods:{
   insertIntoArray: function(){
@@ -16,6 +16,7 @@ methods:{
     },
 
     removeItem:function(index){
+      console.log('Index vale ' + index);
       this.list.splice(index, 1)
     }
   }
