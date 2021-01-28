@@ -15,9 +15,12 @@
         <div class="container">
           <input type="text" v-model="item" v-on:keyup.enter="insertIntoArray">
           <button @click="insertIntoArray">Submit</button>
-          <div class="contenitore-lista">
-            <div class="list-container" v-for="element in list">{{element}}</div>
-          </div>
+          <ul class="contenitore-lista">
+            <li v-for="(element, i) in list">
+              {{element}}
+              <i class="fas fa-times" @click="removeItem(i)"></i>
+            </li>
+          </ul>
           
         </div>
         

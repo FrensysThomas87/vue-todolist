@@ -6,12 +6,17 @@ var app = new Vue({
  data:{
    list:[],
    item: '',
+
 },
 methods:{
   insertIntoArray: function(){
       this.list.push(this.item);
       console.log(this.list);
       this.item = '';
+    },
+
+    removeItem:function(index){
+      this.list.splice(index, 1)
     }
   }
 
