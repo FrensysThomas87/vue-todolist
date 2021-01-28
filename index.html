@@ -15,7 +15,7 @@
             <img :src="imgLogo" alt="">
           </div>
           <input type="text" v-model="item" v-on:keyup.enter="insertIntoArray" placeholder="Nuovo Todo">
-          <button @click="insertIntoArray">Aggiungi</button>
+          <div class="button" @click="insertIntoArray"><span>Aggiungi</span></div>
           <ul class="list-container">
             <li v-for="(element, i) in list">
               {{element}}

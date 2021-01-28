@@ -5,22 +5,32 @@
   box-sizing: border-box;
 }
 
-li{
-  text-align: left;
-  list-style:none;
-  position: relative;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 7px;
-  margin-bottom: 20px;
-}
 
 body{
   padding-top: 30px;
+  
+}
+
+.container{
+  width: 1200px;
+  text-align: center;
+}
+
+
+#logo,
+.container,
+.list-container{
+  margin: 0 auto;
+}
+
+.button,
+input,
+.list-container{
+  border-radius: 10px;
 }
 
 #logo{
   width: 500px;
-  margin: 0 auto;
   margin-bottom: 20px;
 }
 
@@ -30,32 +40,45 @@ body{
 
 input{
   margin-bottom: 30px;
-  border-radius: 10px;
   width: 500px;
   height: 50px;
   padding-left: 15px;
 }
 
-button{
+  .button,
+  .list-container{
+    background-color: #F5F7F7;
+  }
+
+.button{
   height: 50px;
-  border-radius: 10px;
   width: 100px;
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid #000;
+  cursor: pointer;
 }
 
-.container{
-  width: 1200px;
-  margin: 0 auto;
-  text-align: center;
+.button span{
+  line-height: 50px;
 }
+
 
 .list-container{
   width: 600px;
-  border-radius: 10px;
   padding: 50px 20px;
-  background-color: #F5F7F7;
-  margin: 0 auto;
 
 }
+
+li{
+  text-align: left;
+  list-style:none;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 7px;
+  margin-bottom: 20px;
+}
+
 
 .fas.fa-times{
   position: absolute;
