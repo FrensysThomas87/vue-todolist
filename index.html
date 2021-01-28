@@ -16,7 +16,7 @@
           </div>
           <input type="text" v-model="item" v-on:keyup.enter="insertIntoArray" placeholder="Nuovo Todo">
           <button @click="insertIntoArray">Aggiungi</button>
-          <ul class="contenitore-lista">
+          <ul class="list-container">
             <li v-for="(element, i) in list">
               {{element}}
               <i class="fas fa-times" @click="removeItem(i)"></i>

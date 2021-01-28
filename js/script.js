@@ -10,9 +10,13 @@ var app = new Vue({
 },
 methods:{
   insertIntoArray: function(){
+    if(this.item === '' || this.item === ' '){
+      alert('La lista non può essere vuota');
+    }else{
       this.list.push(this.item);
       console.log(this.list);
       this.item = '';
+      }
     },
 
     removeItem:function(index){
